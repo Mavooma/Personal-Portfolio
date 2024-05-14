@@ -394,13 +394,13 @@ nav, .header {
 }
 
 /* Contact and Footer */
-#Contact, footer {
-    background-color: #7b5037;
+#Contact {
+    background-color: beige;
 }
 
 /* Media Queries */
-/* Max-Width(1024px) */
-@media (max-width:1024px) {
+/* Max-Width(991px) */
+@media (max-width:991px) {
     /* Add your media query styles here */
 }
 
@@ -421,8 +421,8 @@ nav, .header {
 
 
 /* ....................Start Media Scrin.................... */
-/* Max-Width(1024px) */
-@media (max-width:1024px) {
+/* Max-Width(991px) */
+@media (max-width:991px) {
     /* Start About */
     .about-container {
         gap: 30px;
@@ -436,7 +436,7 @@ nav, .header {
     }
     /* Start Projects */
     .project-container {
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
