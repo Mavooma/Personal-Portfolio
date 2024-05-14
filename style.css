@@ -70,7 +70,7 @@ h5 {
 p {
     font-size: 17px;
     line-height: 140%;
-    color: var(--color-dark-variant);
+    color: var(--color-black);
 }
 
 /* Links */
@@ -208,7 +208,7 @@ nav {
 }
 
 .header-right p {
-    color: var(--color-dark-variant);
+    color: var(--color-black);
 }
 
 .header-right h2 {
@@ -324,7 +324,7 @@ nav {
 
 .project {
     padding: 24px;
-    border: 1px solid var(--color-dark-variant);
+    border: 1px solid var(--color-black);
     border-radius: 20px;
     text-align: center;
 }
@@ -343,7 +343,7 @@ nav {
 /* Contact Section Styles */
 .contact-container {
     max-width: 35rem;
-    border: 1px solid var(--color-dark-variant);
+    border: 1px solid var(--color-black);
     padding: 24px;
     border-radius: 30px;
     display: flex;
