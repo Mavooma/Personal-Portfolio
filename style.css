@@ -61,6 +61,11 @@ h5 {
     padding-top: 9rem;
 }
 
+.center-heading {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
 /* Paragraph Styles */
 p {
     font-size: 17px;
@@ -99,6 +104,11 @@ a:hover {
     font-weight: 600;
     font-size: 14px;
     transition: var(--transition);
+}
+
+.btn-center {
+    display: block;
+    margin: 0 auto;
 }
 
 .btn:hover {
@@ -211,6 +221,11 @@ nav {
     gap: 1rem;
 }
 
+.header-action-aria .btn {
+    display: block;
+    margin: 0 auto;
+}
+
 .header-social {
     display: flex;
     gap: 1rem;
@@ -225,6 +240,11 @@ nav {
     gap: 4rem;
     align-items: center;
     margin-top: 4rem; /* Adjusted margin top */
+}
+
+.about-left {
+    border-radius: 20px;
+    overflow: hidden;
 }
 
 .about-left img {
@@ -242,12 +262,28 @@ nav {
     text-align: center;
     border: 1px solid var(--color-dark-variant);
     border-radius: 30px;
+    width: 100%;
+}
+
+.edu-box img {
+    margin: auto;
 }
 
 /* Experience Section Styles */
 .section {
     position: relative;
     margin-top: 4rem; /* Adjusted margin top */
+}
+
+.arrow {
+    position: absolute;
+    right: 3%;
+    transition: var(--transition);
+    margin-top: 1.4rem;
+}
+
+.arrow:hover {
+    margin-top: 2rem;
 }
 
 .experience-container {
@@ -271,6 +307,7 @@ nav {
 }
 
 .ex-div {
+    margin: auto;
     display: flex;
     align-items: center;
     gap: 20px;
@@ -290,6 +327,12 @@ nav {
     border: 1px solid var(--color-dark-variant);
     border-radius: 20px;
     text-align: center;
+}
+
+.project .button-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
 }
 
 .project img {
@@ -328,3 +371,189 @@ footer .nav-links {
     justify-content: center;
     margin-bottom: 3rem;
 }
+
+/* Background Colors for Sections */
+/* Nav Bar and Header */
+nav, .header {
+    background-color: #f5f1e7;
+}
+
+/* About Section */
+#About {
+    background-color: #ac9586;
+}
+
+/* Experience Section */
+#Experience {
+    background-color: white;
+}
+
+/* Projects Section */
+#Projects {
+    background-color: #716356;
+}
+
+/* Contact and Footer */
+#Contact, footer {
+    background-color: #7b5037;
+}
+
+/* Media Queries */
+/* Max-Width(1024px) */
+@media (max-width:1024px) {
+    /* Add your media query styles here */
+}
+
+/* Max-Width(991px) */
+@media (max-width:991px) {
+    /* Add your media query styles here */
+}
+
+/* Max-Width(768px) */
+@media (max-width:768px) {
+    /* Add your media query styles here */
+}
+
+/* Max-Width(600px) */
+@media (max-width:600px) {
+    /* Add your media query styles here */
+}
+
+
+/* ....................Start Media Scrin.................... */
+/* Max-Width(1024px) */
+@media (max-width:1024px) {
+    /* Start About */
+    .about-container {
+        gap: 30px;
+    }
+    .basic-edu {
+        gap: 20px;
+    }
+    /* Start Experience */
+    .experience-container {
+        gap: 30px;
+    }
+    /* Start Projects */
+    .project-container {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+/* Max-Width(991px) */
+@media (max-width:991px) {
+    /* Start Nav */
+    
+    .logo {
+        display: none;
+    }
+
+.nav-links {
+    justify-content: center;
+    width: 100%;
+}
+    
+    /* Start Experience*/
+    .experience-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Max-Width(768px) */
+@media (max-width:768px) {
+    h1 {
+        font-size: 38px;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+
+    a {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+
+    .arrow {
+        right: 5%;
+    }
+
+    /* Start Header */
+    .header-container {
+        width: 90%;
+        grid-template-columns: 1fr;
+    }
+
+    .header-left {
+        width: 70%;
+        margin: 0 auto;
+    }
+    /* Start About */
+    .about-container {
+        grid-template-columns: 1fr;
+    }
+
+    .about-left {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .basic-edu {
+        grid-area: 10px;
+    }
+
+    /* Start Experience */
+    
+    .experience-box {
+        padding: 10px;
+    }
+
+    .experience {
+        gap: 20px;
+    }
+
+    .ex-div {
+        gap: 10px;
+    }
+
+    /* Start Projects */
+    .project-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Max-Width(600px) */
+@media (max-width:600px) {
+    a {
+        font-size: 18px;
+    }
+    /* ..........Start Nav.......... */
+    .nav-links {
+        gap: 0;
+        justify-content: space-between;
+    }
+
+    /* ..........Start Contact.......... */
+    .contact-container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    /* ..........Start Footer.......... */
+    footer {
+       padding: 0;
+       padding-bottom: 20px; 
+       width: 90%;
+       margin: auto;
+       margin-top: 9rem;
+    }
+
+    footer .nav-links {
+        width: 100%;
+        justify-content: space-between;
+    }
+}
+/* ....................End Media Scrin.................... */
+
